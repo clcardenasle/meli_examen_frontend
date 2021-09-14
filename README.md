@@ -18,4 +18,4 @@ Abrir en:  [http://localhost:3000](http://localhost:3000) with your browser to s
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.***********
 
-Link Jira: [https://linea-ancestral.atlassian.net/jira/software/projects/MELI/boards/5](Jira)
+Link Jira: [Jira](https://linea-ancestral.atlassian.net/jira/software/projects/MELI/boards/5)
