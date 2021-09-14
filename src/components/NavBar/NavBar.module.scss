@@ -1,5 +1,31 @@
 @import '../../styles/theme';
 
-.navBar {
- background-color: $primary;
+// .MuiToolbar-regular {
+//  min-height: 50px !important;
+// }
+
+.toolBar {
+  background-color: $primary;
+}
+
+.navBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+}
+
+.searchBar {
+  background-color: $backgroud-color-secondary;
+  width: 95%;
+  height: 100%;
+}
+
+.icSearch{
+  background-color: $backgroud-color;
+  width: 15px;
+  padding: 7.5px;
 }
