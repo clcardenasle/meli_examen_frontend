@@ -1,5 +1,5 @@
-$color-primary: #0070f3;	
+@import 'theme';
 
 .bg {
- background-color: $color-primary;
+ background-color: $backgroud-color;
 }
