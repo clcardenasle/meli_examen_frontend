@@ -1,11 +1,14 @@
 import React from "react";
 import NavBar from "../NavBar";
+import styles from "./Layout.module.scss";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
-      {children}
+      <div className={styles.generalBackground}>
+        <NavBar />
+        {children}
+      </div>
     </>
   );
 };
