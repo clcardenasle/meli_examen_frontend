@@ -5,6 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import InputBase from "@material-ui/core/InputBase";
 import { Grid } from "@material-ui/core";
 import { useRouter } from "next/dist/client/router";
+import { PLACEHOLDER, URL } from "./NavBar-Constants";
 
 const NavBar = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -16,12 +17,12 @@ const NavBar = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const url = `/items?search=${searchValue}`;
+    const url = `${URL.ITEMS}${searchValue}`;
     router.push(url);
   };
 
   const toHome = () => {
-    router.push("/");
+    router.push(URL.HOME);
   };
 
   return (
@@ -35,7 +36,7 @@ const NavBar = () => {
             <form className={styles.form} onSubmit={handleSubmit}>
               <InputBase
                 className={styles.searchBar}
-                placeholder="Nunca dejes de buscar"
+                placeholder={PLACEHOLDER}
                 inputProps={{ "aria-label": "search" }}
                 value={searchValue}
                 onChange={handleChange}
