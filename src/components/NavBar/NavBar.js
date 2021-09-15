@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import InputBase from "@material-ui/core/InputBase";
 import { Grid } from "@material-ui/core";
 import { useRouter } from "next/dist/client/router";
-import { PLACEHOLDER, URL } from "./NavBar-Constants";
+import { PLACEHOLDER, URL } from "./NavBar-constants";
 
 const NavBar = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -26,14 +26,14 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar className={styles.appBar} style={{ boxShadow: "none" }}>
+    <AppBar style={{ boxShadow: "none" }}>
       <Toolbar className={styles.toolBar} style={{ minHeight: "50px" }}>
         <Grid className={styles.navBarContainer} container>
-          <Grid item className={styles.logo} xs={1}>
+          <Grid item xs={1}>
             <img src={"/assets/img/logo_ML.png"} alt="Logo Mercadolibre" onClick={toHome}/>
           </Grid>
-          <Grid item className={styles.searchContainer} xs={9}>
-            <form className={styles.form} onSubmit={handleSubmit}>
+          <Grid item xs={9}>
+            <form className={styles.searchBarForm} onSubmit={handleSubmit}>
               <InputBase
                 className={styles.searchBar}
                 placeholder={PLACEHOLDER}
