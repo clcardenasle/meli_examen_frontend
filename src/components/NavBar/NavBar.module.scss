@@ -1,0 +1,29 @@
+@import '../../styles/theme';
+
+.toolBar {
+  background-color: $primary;
+}
+
+.navBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  background-color: $backgroud-color-secondary;
+  width: 95%;
+  height: 30px;
+  padding: 5px;
+}
+
+.icSearch{
+  background-color: $backgroud-color;
+  width: 15px;
+  padding: 7.5px;
+}
+
+.searchBarForm {
+  display: flex;
+  width: 100%;
+}
