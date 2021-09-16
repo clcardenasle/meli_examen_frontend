@@ -7,13 +7,13 @@
   .imageContainer {
     display: flex;
     justify-content: center;
-    height: $image-size;
-    width: $image-size;
+    height: $image-items-size;
+    width: $image-items-size;
     padding: $spc-sm;
     margin-right: 0;
     .image {
       height: 100%;
-      max-width: $image-size;
+      max-width: $image-items-size;
       border-radius:$border-radius;
     }
   }

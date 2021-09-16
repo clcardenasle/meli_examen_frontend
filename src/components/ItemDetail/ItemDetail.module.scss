@@ -1,45 +1,69 @@
+@import '../../styles/theme';
+
 .detailContainer {
   display: flex;
   flex-direction: column;
   .imageInfo {
     display: flex;
     flex-direction: row;
-    .image {
-      width: 400px;
-      height: 400px;
+    .imageContainer {
+      width: $image-description-size;
+      height: $image-description-size;
+      .image {
+        height: 100%;
+      }
     }
     .info {
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       .stateQty {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        font-size: $fnt-sm;
+        margin-top: $spc-md;
         .stateProduct {
-          font-size: 10px;
+          margin-right: 10px;
         }
-        .qty {
-          font-size: 10px;
+        .hyphen {
+          margin-right: 10px;
         }
       }
       .title {
-        font-size: 10px;
+        width: 250px;
+        font-size: $fnt-xl;
+        margin-top: $spc-sm;
+        margin-bottom: $spc-md;
+        font-weight: bold;
       }
       .price {
-        font-size: 10px;
+        font-size: $fnt-xxxl;
+        font-weight: bold;
+        margin-bottom: $spc-md;
       }
       .button {
-        font-size: 10px;
+        width: 300px;
+        font-size: $fnt-lg;
+        margin-right: $spc-md;
+        background-color: $secondary;
+        color:$backgroud-color-secondary ;
+        font-weight: bold;
+        text-transform: capitalize;
       }
     }
   }
   .descriptionContainer {
     display: flex;
     flex-direction: column;
+    margin-left: $spc-md;
     .titleDescription {
-      font-size: 10px;
+      font-size: $fnt-xxl;
+      margin-bottom: $spc-md;
     }
     .description {
-      font-size: 10px;
+      font-size: $fnt-md;
+      margin-bottom: $spc-md;
     }
   }
 }
