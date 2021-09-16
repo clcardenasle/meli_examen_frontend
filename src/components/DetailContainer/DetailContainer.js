@@ -3,6 +3,7 @@ import { Grid, Paper } from "@material-ui/core";
 import styles from "./DetailContainer.module.scss";
 import Skeleton from "@material-ui/lab/Skeleton";
 import { API_URL } from "./DetailContainer-constants";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const DetailContainer = ({id}) => {
 
@@ -38,8 +39,17 @@ const DetailContainer = ({id}) => {
               />
             </>
           )}
-          {console.log(detail)}
-          {console.log(description)}
+          {!loading && (
+          <ItemDetail
+            title={detail.title}
+            image={detail.thumbnail}
+            stateProduct={detail.condition}
+            quantity={detail.sold_quantity}
+            description={description.plain_text}
+          />
+          )}
+          {console.log("detail", detail)}
+          {console.log("description", description)}
         </Paper>
       </Grid>
     </Grid>
