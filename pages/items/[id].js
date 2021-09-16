@@ -1,5 +1,6 @@
 import { useRouter } from "next/dist/client/router";
 import React from "react";
+import DetailContainer from "../../src/components/DetailContainer";
 import Layout from "../../src/components/Layout";
 
 const id = () => {
@@ -8,7 +9,7 @@ const id = () => {
   return (
     <div>
       <Layout>
-        <p>{router.query.id}</p>
+        <DetailContainer id={router.query.id}/>
       </Layout>
     </div>
   );
