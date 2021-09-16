@@ -1,0 +1,64 @@
+@import '../../styles/theme';
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $backgroud-color;
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    height: $image-size;
+    width: $image-size;
+    padding: $spc-sm;
+    margin-right: 0;
+    .image {
+      height: 100%;
+      max-width: $image-size;
+      border-radius:$border-radius;
+    }
+  }
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $text-primary;
+    .priceContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: $spc-md;
+      .priceShipping {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .price {
+          font-size: $fnt-xl;
+          padding-right: $spc-sm;
+        }
+        .icShipping {
+          height: $spc-sm;
+          width: $spc-sm;
+        }
+      }
+      .cityName {
+        font-size: $fnt-xs;
+        color: $text-secondary;
+      }
+    }
+    .tittleContainer {
+      font-size: $fnt-lg;
+    }
+  }
+}
+
+.uniqueComplete {
+  margin: 0;
+}
+
+
+
+
+
+
+

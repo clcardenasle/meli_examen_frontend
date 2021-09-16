@@ -23,7 +23,6 @@ const SearchContainer = ({query}) => {
     <Grid container justifyContent="center">
       <Grid item xs={10}>
         <Paper elevation={0} className={styles.paper}>
-          {console.log(results)}
           {loading && (
             <>
               <Skeleton variant="rect" height={118} className={styles.skeleton} />
@@ -32,14 +31,15 @@ const SearchContainer = ({query}) => {
               <Skeleton variant="rect" height={118} className={styles.skeleton} />
             </>
           )}
-          {results.map((result, index) => (
+          {results.map(result => (
             <Item 
-              key={index}
+              key={result.id}
               price={result.price}
               title={result.title}
               image={result.thumbnail}
               cityName={result.address.state_name}
               shipping={result.shipping.free_shipping}
+              id={result.id}
             />
           ))}
         </Paper>
