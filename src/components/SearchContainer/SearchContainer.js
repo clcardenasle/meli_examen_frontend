@@ -2,7 +2,7 @@ import { Grid, Paper } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { API_URL_LOCAL } from "./SearchContainer-constants";
 import Skeleton from "@material-ui/lab/Skeleton";
-import styles from "./searchContainer.module.scss"
+import styles from "./SearchContainer.module.scss"
 import Item from "../Item";
 
 const SearchContainer = ({query}) => {

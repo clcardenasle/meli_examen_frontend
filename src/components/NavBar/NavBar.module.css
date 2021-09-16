@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.toolBar {
+  background-color: #FFE600;
+}
+
+.navBarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar {
+  background-color: #FFFFFF;
+  width: 95%;
+  height: 30px;
+  padding: 5px;
+}
+
+.icSearch {
+  background-color: #EEEEEE;
+  width: 15px;
+  padding: 7.5px;
+}
+
+.searchBarForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+/*# sourceMappingURL=NavBar.module.css.map */

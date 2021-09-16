@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAC,IAAI;CACZ;;AAED,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "SearchContainer.module.scss"
+    ],
+    "names": [],
+    "file": "SearchContainer.module.css"
+}
