@@ -3,6 +3,7 @@ import styles from "./ItemDetail.module.scss";
 import { Grid } from "@material-ui/core";
 import { moneyFormat } from "../../utils/utils";
 import { Button } from "@material-ui/core";
+import { itemDescriptionText } from "./ItemDetail-constants"
 
 const ItemDetail = ({title, image, stateProduct, quantity, description, price}) => {
 
@@ -19,20 +20,20 @@ const ItemDetail = ({title, image, stateProduct, quantity, description, price}) 
                 {(stateProduct = "New" ? "Nuevo" : "Usado")}
               </div>
               <div className={styles.hyphen}>-</div>
-              <div className={styles.qty}>{quantity} Vendidos</div>
+              <div className={styles.qty}>
+                {quantity} {itemDescriptionText.sold}
+              </div>
             </div>
             <div className={styles.title}>{title}</div>
             <div className={styles.price}>{moneyFormat.format(price)}</div>
-            <Button 
-              className={styles.button} 
-              variant="text">
-              Comprar
+            <Button className={styles.button} variant="text">
+              {itemDescriptionText.buy}
             </Button>
           </Grid>
         </Grid>
         <Grid className={styles.descriptionContainer} xs={7}>
           <div className={styles.titleDescription}>
-            Descripción del producto
+            {itemDescriptionText.titleDescription}
           </div>
           <div className={styles.description}>{description}</div>
         </Grid>

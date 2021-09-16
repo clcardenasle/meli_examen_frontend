@@ -49,8 +49,6 @@ const DetailContainer = ({id}) => {
               description={description.plain_text}
             />
           )}
-          {console.log("detail", detail)}
-          {console.log("description", description)}
         </Paper>
       </Grid>
     </Grid>
