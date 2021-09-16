@@ -40,13 +40,14 @@ const DetailContainer = ({id}) => {
             </>
           )}
           {!loading && (
-          <ItemDetail
-            title={detail.title}
-            image={detail.thumbnail}
-            stateProduct={detail.condition}
-            quantity={detail.sold_quantity}
-            description={description.plain_text}
-          />
+            <ItemDetail
+              title={detail.title}
+              image={detail.thumbnail}
+              stateProduct={detail.condition}
+              quantity={detail.sold_quantity}
+              price={detail.price}
+              description={description.plain_text}
+            />
           )}
           {console.log("detail", detail)}
           {console.log("description", description)}

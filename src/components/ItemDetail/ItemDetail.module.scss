@@ -1,0 +1,45 @@
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  .imageInfo {
+    display: flex;
+    flex-direction: row;
+    .image {
+      width: 400px;
+      height: 400px;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      .stateQty {
+        display: flex;
+        flex-direction: row;
+        .stateProduct {
+          font-size: 10px;
+        }
+        .qty {
+          font-size: 10px;
+        }
+      }
+      .title {
+        font-size: 10px;
+      }
+      .price {
+        font-size: 10px;
+      }
+      .button {
+        font-size: 10px;
+      }
+    }
+  }
+  .descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    .titleDescription {
+      font-size: 10px;
+    }
+    .description {
+      font-size: 10px;
+    }
+  }
+}
