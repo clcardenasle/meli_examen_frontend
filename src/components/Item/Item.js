@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Item.module.scss";
-import { UNIQUE } from "./Item-constants";
+import { UNIQUE, ITEM_URL } from "./Item-constants";
 import { Grid } from "@material-ui/core";
 import { moneyFormat } from "../../utils/utils";
 import { useRouter } from "next/dist/client/router";
@@ -10,7 +10,7 @@ const Item = ({price, title, image, cityName, shipping, id}) => {
   const router = useRouter();
   
   const toDetail = () => {
-    router.push(`/items/${id}`);
+    router.push(`${ITEM_URL}${id}`);
   };
 
   return (
