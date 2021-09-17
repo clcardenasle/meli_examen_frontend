@@ -9,12 +9,12 @@ const ItemDetail = ({title, image, stateProduct, quantity, description, price}) 
 
   return (
     <>
-      <Grid className={styles.detailContainer} container xs={10}>
+      <Grid className={styles.detailContainer} container justifyContent="center">
         <Grid className={styles.imageInfo} item xs={7}>
           <div className={styles.imageContainer}>
             <img className={styles.image} src={image} alt="product image"></img>
           </div>
-          <Grid className={styles.info} xs={3}>
+          <Grid className={styles.info} item xs={3}>
             <div className={styles.stateQty}>
               <div className={styles.stateProduct}>
                 {(stateProduct = "New" ? "Nuevo" : "Usado")}
@@ -31,7 +31,7 @@ const ItemDetail = ({title, image, stateProduct, quantity, description, price}) 
             </Button>
           </Grid>
         </Grid>
-        <Grid className={styles.descriptionContainer} xs={7}>
+        <Grid className={styles.descriptionContainer} item xs={7}>
           <div className={styles.titleDescription}>
             {itemDescriptionText.titleDescription}
           </div>
