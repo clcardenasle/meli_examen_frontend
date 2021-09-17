@@ -4,12 +4,16 @@ import styles from "./DetailContainer.module.scss";
 import Skeleton from "@material-ui/lab/Skeleton";
 import { API_URL } from "./DetailContainer-constants";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import Breadcrumb from "../Breadcrumb";
 
 const DetailContainer = ({id}) => {
 
   const [loading, setLoading] = useState(true);
-  const [detail, setDetail] = useState({});
+  const [detail, setDetail] = useState({title: ""});
   const [description, setDescription] = useState({});
+  const firstWord = (str) => {
+    return str.split(" ")[0]
+  };
 
   useEffect(() => {
     fetch(`${API_URL.ITEMS}${id}`)
@@ -29,6 +33,7 @@ const DetailContainer = ({id}) => {
   return (
     <Grid container justifyContent="center">
       <Grid item xs={10}>
+        <Breadcrumb query={detail.title} category={firstWord(detail.title)} />
         <Paper elevation={0} className={styles.paper}>
           {loading && (
             <>
