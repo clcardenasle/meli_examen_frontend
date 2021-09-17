@@ -39,7 +39,7 @@ const DetailContainer = ({id}) => {
             <>
               <Skeleton
                 variant="rect"
-                height={118}
+                height={1000}
                 className={styles.skeleton}
               />
             </>
