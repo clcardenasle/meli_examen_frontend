@@ -1,0 +1,28 @@
+@import '../../styles/theme';
+
+.errorContainer {
+  display: flex;
+  flex-direction: row;
+  .icError {
+    width: auto;
+    height: $image-items-size;
+    margin: $spc-sm;
+  }
+  .textError {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .titleError {
+      font-size: $fnt-xl;
+      margin-top: $spc-md;
+      margin-bottom: $spc-sm;
+      margin-left: $spc-sm;
+      font-weight: bold;
+    }
+    .steps {
+      font-size: $fnt-lg;
+      margin-left: $spc-md;
+      margin-bottom: $spc-md;
+    }
+  }
+}
