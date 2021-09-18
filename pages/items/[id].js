@@ -4,7 +4,7 @@ import DetailContainer from "../../src/components/DetailContainer";
 import Layout from "../../src/components/Layout";
 import Head from "next/head";
 
-const id = () => {
+const Id = () => {
   const router = useRouter();
 
   return (
@@ -24,4 +24,4 @@ const id = () => {
   );
 };
 
-export default id;
+export default Id;
