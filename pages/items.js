@@ -4,7 +4,7 @@ import Layout from "../src/components/Layout";
 import SearchContainer from "../src/components/SearchContainer";
 import Head from "next/head";
 
-const items = () => {
+const Items = () => {
 
   const router = useRouter();
 
@@ -22,4 +22,4 @@ const items = () => {
   );
 };
 
-export default items;
+export default Items;

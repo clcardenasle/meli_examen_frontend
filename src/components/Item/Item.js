@@ -23,7 +23,7 @@ const Item = ({price, title, image, cityName, shipping, id}) => {
           <div className={styles.priceContainer}>
             <div className={styles.priceShipping}>
               <div className={styles.price}>{moneyFormat.format(price)}</div>
-              {shipping ? <img className={styles.icShipping} src={"/assets/img/ic_shipping.png"} /> : null}
+              {shipping ? <img className={styles.icShipping} src={"/assets/img/ic_shipping.png"} alt="shipping" /> : null}
             </div>
             <div className={styles.cityName}>{cityName}</div>
           </div>
