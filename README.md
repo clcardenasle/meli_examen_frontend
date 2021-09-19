@@ -6,8 +6,15 @@ Ejecutar el programa con el siguiente comando:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
+```
+
+Para mejorar el performance y dejarlo listo para producción ejecutar los siguientes comandos:
+
+```bash
+npm run build
+npm start
 ```
 
 Abrir en:  [http://localhost:3000](http://localhost:3000)
