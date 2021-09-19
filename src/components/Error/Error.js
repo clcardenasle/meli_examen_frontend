@@ -2,7 +2,6 @@ import { Paper } from "@material-ui/core";
 import React from "react";
 import styles from "./Error.module.scss";
 import { warningError } from "./Error-constants";
-import Image from "next/image";
 
 const Error = () => {
 
