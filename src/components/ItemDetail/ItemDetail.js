@@ -17,7 +17,7 @@ const ItemDetail = ({title, image, stateProduct, quantity, description, price}) 
           <Grid className={styles.info} item xs={3}>
             <div className={styles.stateQty}>
               <div className={styles.stateProduct}>
-                {(stateProduct = "New" ? "Nuevo" : "Usado")}
+                {(stateProduct === "new" ? "Nuevo" : "Usado")}
               </div>
               <div className={styles.hyphen}>-</div>
               <div className={styles.qty}>
